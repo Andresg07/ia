@@ -1,0 +1,27 @@
+.row-vendedor{
+    height: 3em;
+	margin-bottom: 1px;
+    background-color:rgba($color: #D6DBDF , $alpha: 1.0);
+    border-radius: 5px;
+    background: linear-gradient(#D6DBDF, grey);
+    text-align: left;
+    
+}
+
+.row-button{
+    background-color:rgba($color: rgb(168, 205, 236) , $alpha: 1.0);
+}
+
+.summary-label{
+    margin-top: 7px;
+    font-size: 24px;
+}
+
+.summary-labels{
+    margin-top: 8px;
+}
+
+.card-space{
+    background-color: rgb(190, 190, 241);
+    border-radius: 15px;
+}

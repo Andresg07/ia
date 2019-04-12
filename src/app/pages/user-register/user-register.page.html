@@ -1,0 +1,109 @@
+<app-header titulo="Registrar Usuario"></app-header>
+<app-button-back></app-button-back>
+
+<ion-content>
+
+  <!--  -->
+ 
+  <!--  -->
+  
+    
+  <ion-item class="documento">   
+    <ion-label position="floating">Documento</ion-label>     
+    <ion-input type="number" name="documento" [(ngModel)]="inputNumer" required ></ion-input>
+  </ion-item>
+  
+  <ion-item class="nombre">   
+    <ion-label position="floating">Nombres</ion-label>      
+    <ion-input type="text" name="nombre" ngModel required ></ion-input>
+  </ion-item>
+  
+  <ion-item class="apellido">     
+    <ion-label position="floating">Apellidos</ion-label>    
+    <ion-input type="text" name="apellido" ngModel required></ion-input>
+  </ion-item>
+  
+  <!---->
+  <ion-item class="movil">     
+      <ion-label position="floating">Móvil</ion-label>    
+    <ion-input type="tel" name="movil" ngModel required></ion-input>
+  </ion-item>
+  
+  <ion-item class="telefono">  
+      <ion-label position="floating">Telefono fijo</ion-label>        
+    <ion-input type="tel" name="telefono" ngModel></ion-input>
+  </ion-item>
+  
+  <ion-item class="direccion">  
+      <ion-label position="floating">Dirección</ion-label>         
+    <ion-input type="text" name="direccion"></ion-input>
+  </ion-item>
+  
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-list-header>Producto</ion-list-header>
+    
+    <ion-item>
+      <ion-label>Seleccionar...</ion-label>
+      <ion-select value="brown" okText="Listo" cancelText="Cancelar">
+        <ion-select-option value="brown">Efectivo</ion-select-option>
+        <ion-select-option value="blonde">De Contado</ion-select-option>
+        <ion-select-option value="black">A Crédito</ion-select-option>
+        <ion-select-option value="red">En Cheque</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+  </ion-list>
+  <!-- End List of Text Items -->
+  <ion-item class="valor-producto">   
+      <ion-label position="floating">Valor del Producto</ion-label>      
+    <ion-input type="number" name="valor-producto" ></ion-input>
+  </ion-item>
+  
+  <ion-list>
+    <ion-list-header>Número de Cuotas</ion-list-header>
+    
+    <ion-item>
+      <ion-label>Seleccionar...</ion-label>
+      <ion-select value="brown" okText="Ok" cancelText="Cancelar">
+        <ion-select-option value="brown">1</ion-select-option>
+        <ion-select-option value="blonde">2</ion-select-option>
+        <ion-select-option value="black">3</ion-select-option>
+        <ion-select-option value="red">4</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+  </ion-list>
+  
+  <ion-list>
+    <ion-list-header>Frecuencia de Cobro</ion-list-header>    
+    <ion-item>
+      <ion-label>Seleccionar...</ion-label>
+      <ion-select value="brown" okText="Listo" cancelText="Cancelar">
+        <ion-select-option value="brown">Diario</ion-select-option>
+        <ion-select-option value="blonde">Semanal</ion-select-option>
+        <ion-select-option value="black">Quincenal</ion-select-option>
+        <ion-select-option value="red">Mensual</ion-select-option>
+      </ion-select>
+    </ion-item>    
+  </ion-list>  
+  <ion-item class="interes">        
+    <ion-input type="number" name="interes" placeholder="Interes (*)"></ion-input>
+  </ion-item>
+    
+  <ion-item>
+    <ion-checkbox></ion-checkbox>
+    <ion-label class="checkbox">C. Adelantado</ion-label>
+  </ion-item>  
+  
+  <ion-button class="button" href="#" color="success" expand="block" type="submit" (click)="addItem({documento:inputNumer})">Guardar</ion-button>
+  
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item.documento }}
+      {{ item.nombre }}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<app-footer></app-footer>

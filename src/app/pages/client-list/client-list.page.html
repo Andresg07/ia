@@ -1,0 +1,93 @@
+
+<app-header titulo="Lista de Clientes"></app-header>
+
+
+<ion-content>
+
+  <!-- botones de cabecera -->
+<div class=header-content>
+    <ion-row>
+      <ion-col >
+        <div>
+          
+          <button class="nut" type="submit"><img src="../assets/icon/nut.svg" alt=""/></button>
+          
+        </div>
+      </ion-col>
+      <ion-col >
+        
+      </ion-col>
+      <ion-col >
+          <ion-icon name="podium" (click)="onClickResumen()"></ion-icon> 
+       
+      </ion-col>
+      <ion-col >
+        <div class="user-add">
+          <ion-icon name="person-add" (click)="onClickAdd()"></ion-icon>          
+        </div>
+      </ion-col>
+      <ion-col >
+        <div>
+          <ion-icon name="logo-windows" (click)="onClickMenu()"></ion-icon>         
+        </div>
+      </ion-col>
+    </ion-row>
+    
+  </div>
+  <!--  -->
+  
+  
+
+  <div class="cabecera">
+    <ion-row>
+      <ion-col size="2">
+        <div class="vrf">
+          <ion-checkbox></ion-checkbox><ion-label class="vrf-label"> Vrf</ion-label>
+        </div>
+      </ion-col>
+      <ion-col size="8">
+        <div class="item-search">
+          <ion-input class="item-search" type="search" placeholder="Buscar cliente"></ion-input>
+          
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <div>
+          <button class="search" type="submit"><img src="../assets/icon/icon-folder.svg" alt="" /></button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>  
+  
+  <ion-list >
+      <ion-card lines="none" *ngFor="let item of data; let i = index">
+        <ion-item>
+
+            <ion-button slot="end" fill="outline" shape="round" (click)="onClickInfo()"><ion-icon name="information"></ion-icon></ion-button>
+            
+          <ion-card-header >
+            <ion-card-title><b>Nombre cliente</b></ion-card-title>
+        </ion-card-header>
+        </ion-item>
+        <ion-item>
+          <ion-card-content>        
+            <ion-card-subtitle>Cuota: $ <i>123.123</i></ion-card-subtitle>
+            <ion-card-subtitle>Saldo: $ <i>123.123</i></ion-card-subtitle>
+            </ion-card-content>
+            <ion-button slot="end" fill="outline" shape="round" (click)="onClickEditar()"><ion-icon name="create"></ion-icon></ion-button>
+      
+        </ion-item>                
+      </ion-card>
+  </ion-list>
+  <ion-infinite-scroll threshold="150px"
+  (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content
+  loadingSpinner="bubbles"
+  loadingText="Cargando...">
+</ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+<app-lista-menu></app-lista-menu>
+
+</ion-content>
+<app-footer id="lista-opciones"></app-footer>

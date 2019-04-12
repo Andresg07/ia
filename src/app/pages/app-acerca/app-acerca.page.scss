@@ -1,0 +1,13 @@
+.btn-back {
+    width: 50px;
+    height: 40px;
+    background-color: rgba($color: #ffffff, $alpha: 1.0);
+    border-radius: 10px;
+   }
+   
+   .btn-back:hover {background-color: #fff}
+   
+   .btn-back:active {
+           transform: translateY(5px);
+   }
+   

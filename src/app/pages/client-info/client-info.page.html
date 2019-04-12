@@ -1,0 +1,95 @@
+
+
+<app-header titulo="Información del cliente"></app-header>
+<app-button-back></app-button-back>
+
+<ion-content >
+
+    
+      <ion-grid >
+        <ion-row>
+          <ion-col size="4">
+            <div>   
+              <ion-label>Consec:</ion-label>    
+                <ion-input class="card-space" type="text" name="consec" readonly="readonly"></ion-input>    
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col >
+              <div >       
+                <ion-label>Documento:</ion-label>
+                  <ion-input class="card-space" type="number" name="documento" readonly="readonly"></ion-input>
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col >
+                <div >     
+                    <ion-label>Nombres:</ion-label>    
+                    <ion-input class="card-space" type="text" name="nombre" readonly="readonly"></ion-input>
+                  </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col >
+                  <div > 
+                      <ion-label>Apellidos:</ion-label>        
+                      <ion-input class="card-space" type="text" name="apellido" readonly="readonly"></ion-input>
+                   </div>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col >
+                    <div > 
+                        <ion-label>Móvil o Telefono:</ion-label>           
+                        <ion-input class="card-space" type="tel" name="movil" readonly="readonly"></ion-input>
+                      </div>
+                  </ion-col>
+                </ion-row>
+    
+                  <ion-row>
+                      <ion-col >
+                        <div >   
+                          <ion-label>Dirección:</ion-label>      
+                            <ion-input class="card-space" type="text" name="direccion" readonly="readonly" ></ion-input>
+                          </div>
+                      </ion-col>
+                    </ion-row>
+      </ion-grid>
+      <div class="row-button">
+          <ion-row >
+    
+              <ion-col size="2" >
+                  <div>
+                    
+                  </div>
+                </ion-col> 
+    
+            <ion-col size="4" >
+              <div >
+                <ion-button (click)="onClickEditar()" color="primary">Editar</ion-button>
+              </div>
+            </ion-col>
+            
+            <ion-col size="4" >
+              <div>
+                <ion-button color="primary">Guardar</ion-button>
+              </div>
+            </ion-col>         
+            <ion-col size="2" >
+                <div>
+                  
+                </div>
+              </ion-col>  
+          </ion-row>
+          <!-- rows 17/18 -->
+          
+          </div>
+     
+
+</ion-content>

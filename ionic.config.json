@@ -1,5 +1,7 @@
 {
   "name": "iannApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,154 @@
+<app-header titulo="Resúmen del día"></app-header>
+<app-button-back></app-button-back>
+
+<ion-content>
+  
+  <ion-grid >
+    <ion-row>
+      <ion-col size="6">
+        <div>   
+          <ion-label>Vendedor:</ion-label>    
+          <ion-input class="card-space" type="text" name="vendedor" readonly="readonly"></ion-input>    
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div >       
+          <ion-label>Fecha de Ruta:</ion-label>
+          <ion-input class="card-space" type="number" name="fecharuta" readonly="readonly"></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div >     
+          <ion-label>Clientes Ausentes:</ion-label>    
+          <ion-input class="card-space" type="text" name="clientesausentes" readonly="readonly"></ion-input>
+        </div>
+      </ion-col>
+    
+      <ion-col >
+        <div > 
+          <ion-label>Número Clientes:</ion-label>        
+          <ion-input class="card-space" type="text" name="numclientes" readonly="readonly"></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div > 
+          <ion-label>Clientes Nuevos:</ion-label>           
+          <ion-input class="card-space" type="tel" name="clientesnuevos" readonly="readonly"></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="4">
+        <div >   
+          <ion-label>Cobros Realizados:</ion-label>      
+          <ion-input class="card-space" type="text" name="cobrosrealizados" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    
+      <ion-col size="8" >
+        <div >   
+          <ion-label>Caja Inicial:</ion-label>      
+          <ion-input class="card-space" type="text" name="cajainicial" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col >
+          <div >   
+            <ion-label>Recaudo Diario:</ion-label>      
+            <ion-input class="card-space" type="text" name="recaudodiario" readonly="readonly" ></ion-input>
+          </div>
+        </ion-col>
+      
+      <ion-col >
+        <div >   
+          <ion-label>Recaudo Esperado:</ion-label>      
+          <ion-input class="card-space" type="text" name="recaudoesperado" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div >   
+          <ion-label>Retiro Caja:</ion-label>      
+          <ion-input class="card-space" type="text" name="retirocaja" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div >   
+          <ion-label>Egresos:</ion-label>      
+          <ion-input class="card-space" type="text" name="egreso" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    
+      <ion-col >
+        <div >   
+          <ion-label>Ingresos:</ion-label>      
+          <ion-input class="card-space" type="text" name="ingreso" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col >
+        <div >   
+          <ion-label>Saldo en Caja:</ion-label>      
+          <ion-input class="card-space" type="text" name="saldoencaja" readonly="readonly" ></ion-input>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    
+  </ion-grid>
+  
+  <!-- *********************************** -->
+  
+  <ion-grid>
+  <!-- rows 15/18 -->
+  <ion-row>
+    <ion-col>
+      <div>
+        
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        
+      </div>
+    </ion-col>          
+  </ion-row>
+  <!-- rows 16/18 -->
+  <div class="row-button">
+    <ion-row >
+      <ion-col size="4" >
+        <div >
+          <ion-button color="primary">No Pagos</ion-button>
+        </div>
+      </ion-col>
+      <ion-col size="8" >
+        <div>
+          <ion-button color="primary">Configuraciones</ion-button>
+        </div>
+      </ion-col>          
+    </ion-row>
+    <!-- rows 17/18 -->
+  </div>
+  <!-- rows 18/18 -->
+</ion-grid>
+
+</ion-content>

@@ -1,0 +1,69 @@
+<app-header titulo="Lista de Clientes"></app-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-item>
+      <ion-checkbox></ion-checkbox><ion-label>Egreso</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox></ion-checkbox><ion-label>Ingreso</ion-label>
+    </ion-item>
+  </ion-item>
+  
+  <ion-list>
+    <ion-list-header>Concepto (*)</ion-list-header>
+    
+    <ion-item>
+      <ion-label>Seleccionar...</ion-label>
+      <ion-select value="brown" okText="Ok" cancelText="Cancelar" >
+        <ion-select-option value="brown">1. Gasolina</ion-select-option>
+        <ion-select-option value="blonde">2. Recargas</ion-select-option>
+        <ion-select-option value="black">3. Administración</ion-select-option>
+        <ion-select-option value="red">4. Arreglo Transporte</ion-select-option>
+        <ion-select-option value="brown">5. Comisiones</ion-select-option>
+        <ion-select-option value="blonde">6. Intereses</ion-select-option>
+        <ion-select-option value="black">7. Mensualidad Sistema</ion-select-option>
+        <ion-select-option value="red">8. Multas</ion-select-option>
+        
+        <ion-select-option value="brown">9. Otros</ion-select-option>
+        <ion-select-option value="blonde">10. Para otro cobro</ion-select-option>
+        <ion-select-option value="black">11. Perdidas</ion-select-option>
+        <ion-select-option value="red">12. Prestamo</ion-select-option>
+        <ion-select-option value="brown">13. Retiros de Caja</ion-select-option>
+        <ion-select-option value="blonde">14. Ahorro</ion-select-option>
+        <ion-select-option value="black">15. Ajuste Caja</ion-select-option>
+        <ion-select-option value="red">16. Alimentación</ion-select-option>
+        
+        <ion-select-option value="brown">17. Anticipo de Nomina</ion-select-option>
+        <ion-select-option value="blonde">18. Arrendo</ion-select-option>
+        <ion-select-option value="black">19. Cadena</ion-select-option>
+        <ion-select-option value="red">20. Cambio de Aceite</ion-select-option>
+        <ion-select-option value="brown">21. Celular</ion-select-option>
+        <ion-select-option value="blonde">22. *</ion-select-option>
+        <ion-select-option value="black">23. *</ion-select-option>
+        <ion-select-option value="red">24. *</ion-select-option>
+      </ion-select>
+    </ion-item>      
+  </ion-list>
+
+  <div>
+  <ion-item class="valor-concepto"> 
+      <ion-label position="floating">Valor (*)</ion-label>      
+    <ion-input type="number" name="valor-concepto"></ion-input>
+  </ion-item>
+</div>
+  
+  <!-- Textarea with custom number of rows and cols -->
+  <ion-item>
+    <!-- <ion-label>Notes</ion-label> -->
+    <ion-textarea rows="6" cols="20" placeholder="Observaciones"></ion-textarea>
+  </ion-item>
+  
+  
+  <ion-button class="button-concept" href="#" color="success" expand="block" type="submit">Guardar</ion-button>
+  
+  
+</ion-content>
+
+<app-footer></app-footer>

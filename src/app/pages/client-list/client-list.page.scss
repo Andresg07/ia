@@ -1,0 +1,74 @@
+.item-search{
+    font-size: 20px;
+    text-align: left;
+}
+.search{
+    width: 100%;
+    background-color: white;
+    
+}
+
+.vrf{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+.nombre-cliente{
+    background-color: beige;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+ion-item{
+    background-color: rgb(190, 190, 241);
+}
+
+ion-card-header{
+    background-color: beige;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.user-add{
+    width: 100%;
+    height: 100%;
+}
+
+.header-content{
+    background-color: rgb(190, 190, 241);    
+}
+
+.pinion {
+    background-color: rgb(31, 150, 234);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.nut {
+    background-color: rgb(31, 150, 234);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.nut:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+    box-shadow: beige 0 0 0 3px ;
+}
+
+.botone{
+    border-radius: 15px;
+}
+
+.botone:hover{
+    
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+    box-shadow: beige 0 0 0 3px ;
+    
+}

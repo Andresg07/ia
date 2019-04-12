@@ -1,0 +1,68 @@
+ <!-- lista de opciones -->
+
+ <ion-menu side="end" menuId="primerMenu" contentId="lista-opciones">
+    <ion-header>
+      
+    </ion-header>
+    <ion-content>
+        <ion-item-group>
+
+            <ion-item-group>
+                <ion-item-divider>
+                  <ion-label>Ventas</ion-label>
+                </ion-item-divider>
+
+                <ion-item>
+                    <img (click)="onClickResumen()" class="btn-menu" src="../assets/icon/478011.svg" alt="" />
+                    <ion-label (click)="onClickResumen()" >Resumen del día</ion-label>
+                  </ion-item>              
+                <ion-item>
+                  <img (click)="onClickVentasN()" class="btn-menu" src="../assets/icon/icon-edit-user.svg" alt="" />
+                <ion-label (click)="onClickVentasN()">Ventas Nuevas</ion-label>
+                </ion-item>
+                <ion-item>
+                    <img (click)="onClickVentasFec()" class="btn-menu" src="../assets/icon/ventas-fechas.svg" alt="" />
+                  <ion-label (click)="onClickVentasFec()" >Ventas de Otras Fechas</ion-label>
+                </ion-item>
+                <ion-item>
+                    <img class="btn-menu" src="../assets/icon/renovar-ventas.svg" alt="" />
+                  <ion-label>Renovar Ventas</ion-label>
+                </ion-item>
+              </ion-item-group>
+          
+            <ion-item-divider>
+              <ion-label>Clientes</ion-label>
+            </ion-item-divider>
+         
+            <ion-item>
+                <img class="btn-menu" src="../assets/icon/validate-user.svg" alt="" />
+              <ion-label>Validar Clientes</ion-label>
+            </ion-item>
+            <ion-item>
+                <img class="btn-menu" src="../assets/icon/user-clock.svg" alt="" />
+              <ion-label>Clientes Ausentes</ion-label>
+            </ion-item>
+            <ion-item>
+                <img class="btn-menu" src="../assets/icon/down-user.svg" alt="" />
+              <ion-label>Descargar Clientes</ion-label>
+            </ion-item>
+          </ion-item-group>
+          
+          <ion-item-group>
+            <ion-item-divider>
+              <ion-label>Gestión</ion-label>
+            </ion-item-divider>
+          
+            <ion-item>
+                <img class="btn-menu" src="../assets/icon/gestion-gastos.svg" alt="" />
+              <ion-label>Gestión de Gastos</ion-label>
+            </ion-item>
+            <ion-item>
+                <img class="btn-menu" src="../assets/icon/gestion-ingresos.svg" alt="" />
+              <ion-label>Gestión de Ingresos</ion-label>
+            </ion-item>
+            
+          </ion-item-group>
+    </ion-content>
+  </ion-menu>
+<!-- fin lista de opciones -->
